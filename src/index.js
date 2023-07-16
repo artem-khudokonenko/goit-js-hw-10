@@ -19,7 +19,7 @@ fetchBreeds()
         return `<option class="option" value="${id}">${name}</option>`;
       })
       .join('');
-    const simpl = new SlimSelect({
+    new SlimSelect({
       select: '#sing',
       events: {
         afterChange: newVal => {
